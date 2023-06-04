@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home - Bene</title>
+    <link rel="stylesheet" href="main-styles.css">
+    <script src="main-script.js"></script>
+    <link rel="icon" href="png/icon.png">
+
+</head>
+
+
+<body> <!--Popup wegen Sprache-->
+    <div id="popup-container" class="popup-container">
+        <div class="close-button" onclick="closePopup()">✘</div>
+        <h1>Hey!</h1>
+        <p>Du bist Deutsch. Möchtest du die deutsche <br>Version der Seite besuchen?</p>
+        <button class="redi-button" onclick="window.location.href = 'ger-de/home.html';">Zur deutschen Seite</button>  
+        
+        <p><span class="notGerman" onclick="notGerman()">I'm not german</span></p>
+    </div>
+
+  <div id="notification" class="notification">
+    <p>Thanks for reporting!</p>
+  </div>
+  
+        <!------------------------>
+        <!-- Popup wwgen Sprache-->
+
+
+    <div class="container">
+        <h1>Welcome!</h1>
+        <h2>My name is Bene</h2>
+
+        <h3><br>I am a german developer</h3>
+        <h4>I progammm discord Bots and play with Apples developement tools</h4>
+    
+        <div class="links">
+            <a href="https://github.com/AlphaBMJy" target="_blank">Github</a>
+            <a href="https://twitter.com/AlphaBMJy" target="_blank">Twitter</a>
+            <a href="https://discord.gg/7JDDk22cDc" target="_blank">Discord</a>
+        </div>
+    
+    
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(document).ready(function() {
+          $.get("besucher.php");
+        });
+        </script>
+        
+</body>
+
+
+</html>

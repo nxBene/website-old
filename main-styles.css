@@ -1,0 +1,163 @@
+/* Popup wegen Sprache */
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #c0bfe7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 100px #1D1C43;
+    display: none;
+    cursor: help;
+    transition: background-color 0.5s ease;
+    
+}
+
+
+.close-button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: font-size 0.5s ease;
+    transition: color 0.5s ease;
+
+
+}
+
+.close-button:hover {
+    color: #5e5c5b;
+}
+
+
+.notGerman {
+    font-size: 16px;
+    text-decoration: underline;
+
+    cursor: default;
+}
+
+
+.notification {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #3B444C;
+    color: white;
+    font-size: 30px;
+    text-align:  center;
+    display: none;
+    cursor: default;
+  }
+  
+
+
+.redi-button {
+    padding: 12px 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #e4ae6d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.redi-button:hover {
+    background-color: #d79b51;
+}
+
+.redi-button:active {
+    background-color: #393886;
+}
+
+
+
+
+/* Popup wegen Sprache */
+/* /////////////////// */
+
+
+
+
+
+
+
+.container {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+body {
+    background: linear-gradient(to bottom, #393886, #1D1C43);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+
+}
+
+h2 {
+    font-size: 60px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+
+}
+
+.links a:hover::after {
+    transform: scaleX(1);
+}
